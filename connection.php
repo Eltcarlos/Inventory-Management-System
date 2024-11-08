@@ -1,12 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ims480";
+$servername = "db"; 
+$username = "root"; 
+$password = "root_password"; 
+$dbname = "myapp";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
